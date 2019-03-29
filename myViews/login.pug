@@ -1,0 +1,13 @@
+html
+    head
+        title Monsters service
+        style
+            include login.css
+    body
+        h1 Welcome in Monsters Service
+        h3.upper-text sign in
+        form(action="http://localhost:3000/main", method="GET")
+            p e-mail: <input type="email" name="email" value="putin@russiandevil.ru">
+            p password: <input type="password" name="password" value="imdevil">
+            button Submit
+            button <a href="/auth/google">Sign in with Google

@@ -1,0 +1,49 @@
+body {
+    background-color: #000;
+}
+
+h1 {
+    color: #e84118;
+}
+
+h2, a {
+    color: #fff;
+}
+
+h3 {
+    color: #fbc531;
+    margin-top: 30px;
+}
+
+ol {
+    font-size: 30px;
+    font-weight: bold;
+    color: #273c75;
+    width: 30vw;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 60vh;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.monsters-club {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.first-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #353b48;
+}

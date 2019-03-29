@@ -1,0 +1,21 @@
+html
+    head
+        title Monsters Service
+        style
+            include main.css
+    body
+        if(user_email=="putin@russiandevil.ru")
+            div.monsters-club
+                div.first-line
+                    h1 You are in Monsters HighScore <h3>You are logged in as: #{user_email}</h3>
+                h2 Dear, #{user_name} welcome in our world, check your position on the list of the biggest monsters on Earth
+                ol
+                    li #{first}
+                    li #{user_name}
+                    li #{thirdh}
+                form(action="http://localhost:3000/login", method="GET")
+                    button LOGOUT
+
+            img(src="./hell.jpg", width="100%")
+        else
+            h1 The account does not exist on our website. try again <a href="/login">Sign In
