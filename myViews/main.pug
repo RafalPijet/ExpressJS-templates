@@ -4,7 +4,7 @@ html
         style
             include main.css
     body
-        if(user_email=="putin@russiandevil.ru")
+        if(check && user_email == "putin@russiandevil.ru")
             div.monsters-club
                 div.first-line
                     h1 You are in Monsters HighScore <h3>You are logged in as: #{user_email}</h3>
@@ -12,6 +12,20 @@ html
                 ol
                     li #{first}
                     li #{user_name}
+                    li #{thirdh}
+                form(action="http://localhost:3000/login", method="GET")
+                    button LOGOUT
+
+            img(src="./hell.jpg", width="100%")
+        if (!check)
+            div.monsters-club
+                div.first-line
+                    h1 You are in Monsters HighScore <h3>You are logged in as: #{user.email}</h3>
+                    img(src=user.image width="50" height="50")
+                h2 Dear, #{user.displayName} welcome in our world, check your position on the list of the biggest monsters on Earth
+                ol
+                    li #{first}
+                    li #{user.displayName}
                     li #{thirdh}
                 form(action="http://localhost:3000/login", method="GET")
                     button LOGOUT
